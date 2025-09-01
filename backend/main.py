@@ -71,6 +71,8 @@ async def lifespan(app: FastAPI):
     os.makedirs("outputs", exist_ok=True)
     os.makedirs("temp", exist_ok=True)
 
+    os.makedirs("disponibilidad_camiones", exist_ok=True)
+
     logger.info("✅ Directorios creados")
 
     yield
@@ -154,6 +156,7 @@ app.add_middleware(
 )
 
 # Servir archivos estáticos (para downloads)
+os.makedirs("outputs", exist_ok=True)
 app.mount("/static", StaticFiles(directory="outputs"), name="static")
 
 
