@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+
+@theme {
+  /* Colores primarios (tu config anterior) */
+  --color-primary-50: #eff6ff;
+  --color-primary-500: #3b82f6;
+  --color-primary-600: #2563eb;
+  --color-primary-700: #1d4ed8;
+
+}
+
+@layer components {
+  /*
+   * Creamos una clase 'input-field' que agrupa varias
+   * utilidades de Tailwind. La puedes usar así: <input class="input-field">
+  */
+  .input-field {
+    @apply w-full px-4 py-2 border border-gray-300 rounded-lg;
+    @apply focus:ring-2 focus:ring-primary-500 focus:border-primary-500;
+  }
+}
+@layer utilities {
+  body {
+    background: cadetblue;
+  }
+}

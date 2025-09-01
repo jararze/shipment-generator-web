@@ -1,0 +1,56 @@
+======================================================================
+REPORTE DE VALIDACIÓN - VERSIÓN BASE DE DATOS
+======================================================================
+ESTADÍSTICAS GENERALES:
+   Total de registros generados: 336
+   Registros Header (H): 84
+   Registros Detail (D): 252
+   ✅ Proporción 1:3 (H:D) correcta
+
+ESTADÍSTICAS DE BASE DE DATOS:
+   Total consultas ejecutadas: 420
+   Promedio consultas por registro: 5.0
+
+EFERENCE NUMBERS (desde BD):
+   Rango: 40869 - 40952
+   Total generados: 84
+   Todos los números provienen de la secuencia de BD
+
+PRIORIDADES (desde maestro_dtto):
+   Prioridad 463: 9 rutas
+   Prioridad 188: 6 rutas
+   Prioridad 315: 6 rutas
+   Prioridad 50: 4 rutas
+   Prioridad 85: 3 rutas
+   Prioridad 266: 1 rutas
+   Prioridad 362: 1 rutas
+   Prioridad 420: 11 rutas
+   Prioridad 162: 4 rutas
+   Prioridad 151: 2 rutas
+   Prioridad 21: 3 rutas
+   Prioridad 103: 3 rutas
+   Prioridad 155: 3 rutas
+   Prioridad 3: 2 rutas
+   Prioridad 399: 5 rutas
+   Prioridad 379: 2 rutas
+   Prioridad 298: 9 rutas
+   Prioridad 310: 4 rutas
+   Prioridad 267: 2 rutas
+   Prioridad 300: 3 rutas
+   Prioridad 24: 1 rutas
+
+ ERRORES Y ADVERTENCIAS:
+   No se encontraron errores
+
+ VERIFICACIONES DE INTEGRIDAD BD:
+   Headers con datos de BD completos: 84/84
+   Details con cantidades de BD: 84
+
+💡 DATOS OBTENIDOS DE BASE DE DATOS:
+   ✅ SKU Names desde 'dados_produtos' y 'maestro_envases'
+   ✅ Prioridades desde 'maestro_dtto' por rutas
+   ✅ Commodities desde 'dados_produtos'
+   ✅ Hectolitros calculados desde BD
+   ✅ Bultos calculados desde BD
+   ✅ ReferenceNumbers desde secuencia BD
+======================================================================

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shipment XML Generator v5.0</title>
+  <meta name="description" content="Generador XML para TMS con integración de base de datos">
+
+  <!-- Preconnect para mejor performance -->
+  <link rel="preconnect" href="http://localhost:8000">
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+  <!-- Theme color -->
+  <meta name="theme-color" content="#2563eb">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Shipment XML Generator v5.0">
+  <meta property="og:description" content="Generador XML para TMS con integración de base de datos">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="Shipment XML Generator v5.0">
+  <meta property="twitter:description" content="Generador XML para TMS con integración de base de datos">
+
+  <style>
+      /* Loading spinner mientras carga Vue */
+      .loading-spinner {
+          display: inline-block;
+          width: 40px;
+          height: 40px;
+          border: 3px solid #f3f3f3;
+          border-radius: 50%;
+          border-top-color: #2563eb;
+          animation: spin 1s ease-in-out infinite;
+      }
+
+      @keyframes spin {
+          to { transform: rotate(360deg); }
+      }
+
+      .loading-container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+          flex-direction: column;
+          font-family: system-ui, -apple-system, sans-serif;
+      }
+
+      /* Ocultar el loading cuando Vue esté listo */
+      #app:not(:empty) + .loading-container {
+          display: none;
+      }
+  </style>
+</head>
+<body class="bg-gray-50">
+<div id="app"></div>
+
+<!-- Loading fallback -->
+<div class="loading-container">
+  <div class="loading-spinner"></div>
+  <p class="mt-4 text-gray-600">Cargando Shipment Generator...</p>
+  <h1 class="text-5xl color-warning-500 underline">prueba</h1>
+</div>
+
+<script type="module" src="/src/main.js"></script>
+
+<!-- Service Worker para PWA (opcional) -->
+
+</body>
+</html>
