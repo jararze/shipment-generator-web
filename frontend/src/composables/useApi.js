@@ -4,7 +4,8 @@ import axios from 'axios'
 
 // Configurar axios
 const api = axios.create({
-  baseURL: 'http://localhost:8000',
+  // baseURL: 'http://localhost:8000',
+  baseURL: 'https://shipment-generator-api.onrender.com',
   timeout: 300000, // 5 minutos para uploads grandes
 })
 
